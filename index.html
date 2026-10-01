@@ -1,166 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Portfolio</title>
-    <!-- Jeg refererer til css filen med linket -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Victoria Hallundbæk - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
+
+<meta name="description" content="Victoria Hallundbæk - elev på NEXT Sukkertoppen. Personlig portfolio med programmeringsprojekter i Python, HTML og Scratch.">
+<meta name="author" content="Victoria Hallundbæk">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Victoria Hallundbæk - Portfolio">
+<meta property="og:description" content="Elev på NEXT Sukkertoppen. Projekter og færdigheder inden for programmering.">
+<meta property="og:type" content="website">
+
 <body>
-    <!---header--->
     <header>
-        <h2 class="logo">Portfo<span>lio</span></h2>
-        <ul class="navbar">
-            <li><a href="#home">Hjem</a></li>
-            <li><a href="#about">Om mig</a></li>
-            <li><a href="#experience">Erfaring</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Projekter</a></li>
-            <li><a href="#contact">Kontakt mig</a></li>
-        </ul>
+        <div class="logo">Victoria Hallundbæk</div>
+        <nav>
+            <a href="#about">Om mig</a>
+            <a href="#languages">Sprog</a>
+            <a href="#experience">Erfaring</a>
+            <a href="#skills">Færdigheder</a>
+            <a href="#projects">Projekter</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
     </header>
 
-    <!---home--->
-    <section class="home" id="home">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="img/video4.mp4" type="video/mp4">
-        </video>
-        <div class="home-text">
-            <h4>Hej</h4>
-            <h1>Jeg er Victoria <br> <span>Hallundbæk</span></h1>
-            <h3>Elev på NEXT Sukkertoppen </h3>
-            <a href="https://www.geeksforgeeks.org/" class="btn" target="_blank">Download Resume</a>
-        </div>
-    </section>
+    <main>
+        <section class="intro">
+            <h1>Hej, jeg er Victoria</h1>
+            <p>Elev på NEXT Sukkertoppen Gymnasium på en programmeringslinje.</p>
+        </section>
 
-    <!---about--->
-     <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/profile.jpg">
-        </div>
-
-        <div class="about-text">
+        <section id="about">
             <h2>Om mig</h2>
-            <h4>Mit navn er Victoria</h4>
-            <p>Jeg går i 2.g på NEXT Sukkertoppen på en programeringslinje.</p><br>
-            <div class="about-gri">
-                <div class="about-in">
-                    <h5>1. Lære nye ting</h5>
-                </div>
-            </div>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
-    </section>
+            <p>Mit navn er Victoria Hallundbæk, og jeg går i 2.g på NEXT Sukkertoppen på en programmeringslinje.</p>
+            <p>Mine mål:</p>
+            <ul>
+                <li>Lære nye ting</li>
+                <li>Forstå webudvikling og programmering</li>
+            </ul>
+        </section>
 
-    <!-- Technical Languages -->
-    <div class="inner">
-        <div class="Tech_header">
-            <h1>Programmeringssprog</h1>
-        </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="tech_img">
-                        <img class="skill-icon" src="img/python-logo-only.png" alt="Python">
-                    </div>
-                    <h3>Python</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-     
-    <!-- -Experience- -->
-    <section class="experience" id="experience">
-        <div class="main-text">
+        <section id="languages">
+            <h2>Programmeringssprog</h2>
+            <ul>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <section id="experience">
             <h2>Mine Erfaringer</h2>
-        </div>
-        <br>
-        <div class="experience-content">
-            <div class="box">
-                <img src="img/gfg.png" >
-                <h3>Små prejekter og opgaver i skolen</h3>
-                    </span>
-                    • Árbejdet i grupper om at designe hjemmesider.
-                </p>
+            <div class="card">
+                <h3>Små projekter og opgaver i skolen</h3>
+                <p>Arbejdet i grupper om at designe og opbygge enkle hjemmesider.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- -Skills- -->
-    <section class="skills" id="skills">
-        <div class="main-text">
+        <section id="skills">
             <h2>Mine Færdigheder</h2>
-        </div>
+            <ul>
+                <li>Problemløsning og basal kodning</li>
+                <li>Gruppearbejde og ideudvikling</li>
+                <li>The mbappe special</li>
+            </ul>
+        </section>
 
-        <div class="skills-content">
-            <div class="box">
-                <h3>The mbappe special</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- -portfolio- -->
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
+        <section id="projects">
             <h2>Mine Projekter</h2>
-            <h4>De er mega tuff trust</h4>
-        </div>
-
-        <div class="portfolio-content">
-            <div class="row">
-                <a href="https://scratch.mit.edu/projects/1257454187/" target="_blank">
-                    <img src="img/lib1.jpg">
-                </a>
-                    <div class="main-row">
-                    <div class="row-text">
-                        <h6>Scratch apps</h6>
-                    </div>
-                </div>
+            <div class="card">
                 <h3>Raise an astronaut</h3>
+                <p>Scratch app udviklet som skoleprojekt.</p>
+                <p><a href="https://scratch.mit.edu/projects/1257454187/" target="_blank">Åbn projektet på Scratch</a></p>
             </div>
-        </div> 
-    </section>
+        </section>
 
-    <!-- -contact- -->
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Kontakt mig</h2>
-            <h4>Lad os arbejde sammen</h4>
-            <div class="contact-list">
-                <li><a href="#">Local Address</a></li>
-                <li><a href="#">example@gmail.com</a></li>
-                <li><a href="#">+91 0000000000</a></li>
-                <a href="mailto: example@gmail.com">
-                    <button class="btn">
-                        Skriv til mig 😘
-                    </button>
-                </a>
-            </div>
-            <div class="contact-icons">
-                <a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a title="+91 0000000000"><i class='bx bxl-whatsapp' ></i></a>
+    </main>
 
-            </div>
-        </div> 
-    </section>
-
-    <!---scroll-top--->
-    <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!---custom js link--->
-    <script type="text/javascript" src="js/script.js"></script>
-
+    <footer>
+        <p>&copy; 2026 Victoria Hallundbæk - NEXT Sukkertoppen</p>
+    </footer>
 </body>
 </html>
